@@ -1,0 +1,358 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    color: #37474F;
+    font-size: 1.6rem;
+}
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*==========================    HEADER =============================*/
+
+.page-header {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 20px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.page-nav .hamburger {
+    border: 0;
+    background: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+
+.fa-bars{
+    color: #fff;
+    border: 0;
+}
+
+.fa-times{
+    border: 0;
+}
+
+.page-nav .hamburger .fa-bars{
+    width: 18px;
+    height: 6px;
+}
+
+.page-nav .hamburger .fa-times {
+    display: none;
+    
+}
+
+.page-nav .navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.page-nav .navigation-menu li {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #f5f7f8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page-nav .navigation-menu li.sign-up {
+    border: 0;
+    margin-top: 30px;
+}
+
+.page-nav .navigation-menu li.sign-up a {
+    border: 2px solid #4F4F4F;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.page-nav .navigation-menu li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.page-header.nav-opened {
+    background-color: #fff;
+    box-shadow: -1px 9px 19px -8px rgba(0, 0, 0, 0.5);
+}
+
+.page-header.nav-opened .page-logo {
+    fill: #000;
+}
+
+.page-header.nav-opened .fa-bars {
+    color: #fff;
+}
+
+.page-header.nav-opened .hamburger .fa-bars {
+    display: none;
+}
+
+.page-header.nav-opened .hamburger .fa-times{
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+.page-header.nav-opened .navigation-menu {
+    display: block;
+}
+
+.page-logo {
+    z-index: 1;
+    width: 100px;
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    color: #fff;
+    top: 5;
+}
+
+
+
+/*==========================    MAIN  =============================*/
+
+/*======== PICTURE CONTENT  ========*/
+
+
+.article .article-header {
+    background: url(7.jpg) no-repeat;
+    background-size:cover;
+    background-position: 17% -40px;
+    padding: 20px;
+    padding-top: 100px;
+    color: #fff;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    box-sizing: border-box;
+}
+
+
+.article-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 4.0rem;
+    padding-bottom: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.article-text {
+    font-size: 2.1rem;
+    font-weight: 500;
+    padding-bottom: 50px;
+    margin: 0;
+    color: #fff;
+}
+
+.travel-agency {
+    max-width: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+   
+}
+
+.travel-agency-name a {
+    margin: 0;
+    color: #fff;
+    font-weight: 800;
+}
+
+.travel-agency-name::after {
+    content: "\00b7";
+    display: block;
+    font-size: 2rem;
+}
+
+
+
+/*========  TEXT  ========*/
+
+
+.article-content p {
+    margin-bottom: 30px;
+}
+
+
+.text-header{
+    box-sizing: border-box;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.article-container {
+    
+    padding-top: 20px;
+    line-height: 26px;
+    padding: 30px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.article-container p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.article-container a {
+    margin-top: 0;
+    color: #000;
+    padding-bottom: 0px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.article-container a:hover{
+    text-decoration: underline
+}
+
+.article-sidebar {
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-top: 82px;
+    padding-bottom: 82px;
+    margin-top: 104px;
+    margin-bottom: 104px;
+    max-width: calc(100%-30px);
+    margin: auto;
+    padding: 50px;
+    text-align: justify;
+}
+
+.article-sidebar h3 {
+    text-align: left;
+}
+
+
+.article-sidebar p{
+    margin-bottom: 0px;
+}
+.article-sidebar .article-picture {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.article-sidebar .article-picture img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.article-sidebar .article-picture .caption {
+    font-style: italic;
+    color: #78909C;
+    text-align: center;
+}
+
+.pictures{ 
+    padding:15px;
+}
+
+.pictures ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.pictures li{
+    margin: 0px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.pictures img{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    text-align: center; 
+}
+
+
+/*========================== FOOTER =============================*/
+
+
+.page-footer {
+    text-align: center;
+    background-color: #f5f7f8;
+    padding-top: 20px;
+    padding-bottom: 48px;
+}
+
+.page-footer .navigation-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer .navigation-menu li {
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 40%;
+    margin:auto;
+}
+
+.page-footer .navigation-menu li a {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.page-footer .navigation-menu li:last-child a {
+   
+    font-weight: 800;
+}
+
+.page-footer .copyright {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin: 0;
+    margin-bottom: 0px;
+    color: gray;
+}
+
+
+
+
